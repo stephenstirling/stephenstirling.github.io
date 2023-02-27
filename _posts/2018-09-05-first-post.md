@@ -1,12 +1,12 @@
 ---
 title: Using Data Science to Visualize and Model Forecasts for Ukraine’s Economic Future
-author: Malcolm
+author: Stephen
 layout: post
 categories:
   - blog
 tags:
-  - review
-  - games
+  - economics
+  - Python
 ---
 
 ![header](/assets/post1/header%2Bimage.png)
