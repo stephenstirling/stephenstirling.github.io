@@ -8,7 +8,7 @@ tags:
   - project
 ---
 
-![header](/assets/UkraineStruggle/header%2Bimage.png)
+![header](/assets/UkraineStruggle/header.png)
 
 Background 
 
