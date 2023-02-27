@@ -5,105 +5,32 @@ layout: post
 categories:
 - blog
 ---
+(/assets/FDI Africa/header.png)
 
-Inspired by
-[recent work on an automatically-generated HTTP API](/blog/2022/07/30/hand-rolled-api-generator.html)
-I took a look at our WebSocket API. We had types defined on our backend, and some were
-shared by our frontend thanks to the [typescript-generator](https://github.com/vojtechhabarta/typescript-generator)
-plugin, but it was a hodge-podge of hand written TypeScript types and for loops with casts
-to try to ensure the frontend and backend stayed in sync - in other words,
-we had a lot of code that described the plumbing rather than doing useful things.
-Here I'll demonstrate how we manage to share WebSocket calls, listeners, and types across our frontend
-and backend, ending up with a single clear and concise interface for us to use. 
+Foreign aid, as envisioned and applied throughout the 20th century, has long functioned as an approach to enhance the livelihood of local populations and to provide resources for certain aspects of society that have been unfunded by domestic means. When applied in the best of circumstances, foreign aid exists to be wary of not crowding out local investments. The best implementations of aid are those whose feasibility and prospects are long-studied and modeled in think tanks and offices in the chambered halls of western democracies. Foreign aid has played a significant role in times of emergency relief, and refugee crises, and as a temporary means to improve the quality of life in low-income and lower-middle-income economies. 
 
-Want to skip the explanation and just check out the code?
-[Here you go](https://github.com/crummy/kotlin-typescript-websocket-api).
+To be effective, and more importantly, to be sustainable, aid by its very nature has to exist as a short-term and interim solution to any type of problem; be it a natural disaster or fighting corruption that frequently finds itself inextricably intertwined into the fabric of national economies. USAID, one of the world’s foremost providers of aid, states in its name, Agency for International Development that its goal is development and not aid. Accountability and verifiability are the most painful thorns in the side of assistance campaigns or initiatives. In 2013, the European Union suspended financial relief to Uganda after several of its ministers admitted to embezzling over $13 million worth of aid. The ongoing multinational effort to rebuild Afghanistan has faced withering criticism after reports of its government squandered hundreds of billions of dollars in reconstruction funds. 
 
-# The old way: Building a bridge from both ends
+Despite its susceptibility to misuse, foreign aid will always play a role in international development, regardless of what the statistics continue to show. When aid campaigns increase in longevity and their scope widens, the propensity for abuse and corruption seems to grow in tandem. Perhaps arguments can be made that aid is best designed and implemented as a response to humanitarian crises or short-term projects with well-vetted beneficiaries. Although aid helps people and societies, it does not empower them, nor is it intended to. Empowerment comes in the form of providing the tools and means to obtain self-sufficiency. Self-sufficiency only results after years and years of developing skills and refining a craft. Developing skills lead to means of production which leads to the creation of industry. 
 
-Our websocket client code would send messages to our backend, which would
-handle the message and forward it on, hopefully to the right destination.
+No nation has ever gone from middle income to high income without industrial means of production and generations of improving processes to trade on the international scale and become connected to the world economy. When economies lack industrial competencies, foreign direct investment can catalyze industrial growth. Using publicly available data from the World Bank and the UN Conference on Trade and Development Policy, we will take a look at how FDI has impacted the nations of Sub-Saharan Africa. The countries in this region belong to the low-income, lower-middle-income, and upper-middle-income World Bank categories.
 
-![Websocket communication... in theory.](/assets/simple.png)
+(/assets/FDI Africa/Figure+1.png)
 
-In reality, keeping track of what messages contained what fields,
-where they were supposed to go, and who was allowed access got messy pretty
-quickly.
+As an aggregate, Sub-Saharan Africa has seen the GDPs of its member countries fluctuate between 1990 and 2016. Across the continent, however, inflows of FDI as a proportion of the economy have made a gradual but steady upward trajectory. Despite this, the region has attracted comparatively low FDI levels compared to the rest of the world. From 2010 to 2016, the continent attracted only 1.8% of global FDI. A seeming paradox exists with FDI in Africa. Parts of the continent are replete with natural resources while supplying a relatively cheap labor force by global standards. Africa also offers a higher return on investment than most of the world at 11% compared to the global average of 7.1%. A few bottlenecks continue to exist, however, such as political instability and concern about human capital. 
 
-![Websocket communication in reality](/assets/messy.png)
+Figure 1 shows us, however, that some nations are embracing FDI as it continues to contribute a larger portion of their GDPs. FDI has increased in Africa over the past decade with China becoming a major investor in infrastructure projects. At the Forum on China-Africa Cooperation in 2018, China announced new funding in the form of $60 billion in credit lines, grants, interest-free loans, and investment financing. The new capital allows an easier flow of goods in the form of roads and rails, increased industrial capacities, and with it the rise of a new middle class. 
 
-# The new way: A clearly defined interface(s)
+(/assets/FDI Africa/FDI+GDP.png)
 
-Let's group our messages in two: 
+Acts of foreign investment may be applauded for having been conceived in a spirit of altruism, however, this is seemingly the result of a byproduct than the stated goals. FDI decisions are meticulously planned and analyzed for their ROI feasibility. When a foreign labor force can fulfill the same tasks as its domestic counterpart with comparatively minimal initial investment, the upfront FDI expenses often become cost-efficient. Throughout the 20th century, China served in large part as the world’s factory largely due to its cheaper labor force and highly efficient means of production. As it began to industrial heavily in the 1980s, its middle class began to emerge. While China’s industrial transformation has not been described as a revolution, its transition expanded its human capital and raised millions from abject poverty. The new capital gave China the ability to invest overseas and for the past two decades, a significant source of its outsourcing has been taking place in Africa. 
 
-* Messages sent from the client
-* Messages sent from the server
+The most visible beneficiaries of FDI are the industries most impacted by investment projects. Figure 2 takes a step beyond the obvious recipients and looks at countries where a micro-level benefit could be correlated with foreign investment. Using 2018 data, three distinct clusters emerge from this aggregate of 33 Sub-Saharan countries, with Egypt appearing as a notable outlier.  
 
-![Separating WebSockets into two groups](/assets/interface.png)
+The blue cluster represents countries that have received the highest amount of FDI in 2018 as well as those with the highest GDPs per capita. The countries in this group have relatively small populations, with each member having under three million citizens. While not conclusive, these three factors suggest that foreign investment is likely contributing in part to the financial well-being of significant amounts of the populace. When populations are smaller, the long-term effects of investment projects have more impact on residents. In commodity-based economies, large sectors of the population are likely to be involved in industrial fields and more impacted by FDI. 
 
-This separation gives us a hint on how we can separate our calls
-in code in terms of how we handle it. So we build two interfaces for
-our WebSocket service, one for each category:
+The member countries comprising the green cluster outperform the red in terms of FDI inflows, but not necessarily on the scale of GDP per capita. While the population plays a considerable role in the way FDI trickles down to every segment of the population, there are many other factors at play. A red sub-cluster of countries appears near the intersection of the X and Y axes. The countries in this group have economies less attractive to foreign investors. This could be due to several factors such as autocratic governments, lack of natural resources, or lack of an ROI for any investment.
 
-* `ChatApi`, with methods like `sendMessage()` for when a client
-initiates an action
-* `ChatEvents`, with methods like `onSendMessage()` for when a client
-receives an action from the server
-
-These two can be combined into a single TypeScript file for clients
-to use. The server side is a little more complicated; here's how I did
-it:
-
-1. Bind all methods from `ChatApi` to an implementation, and 
-redirect websocket messages to this implementation
-2. Create a proxy object that implements `ChatEvents`, redirecting
-any calls to it to a list of WebSocket sessions that have
-registered for that event
-3. Add a special extra "register" method to our WebSocket connection,
-that allows clients to add themselves to the list of sessions 
-in the client.
-
-![The TypeScript and backend integration](/assets/websockets.png)
-
-The result is client code that looks like this:
-
-```typescript
-const api = new ChatApi({onOpen: () => console.log("connected")})
-api.onMessage(msg => setMessages([...messages, msg]))
-//...
-api.sendMessage("Wow, that was easy!")
-```
-
-With our TypeScript file clearly defining how to interact with
-our backend, a little bit of reflective Kotlin code connecting
-our WebSocket connection to our backend implementation, and
-[typescript-generator](https://github.com/vojtechhabarta/typescript-generator)
-to share types, we couldn't have a safer, easier to use API.
-
-# Who listens to what?
-
-Not every message should go to every client. For example, in a chat
-app, private messages should only go to their destination. I handled this
-with a special annotation on method parameters that allow filtering
-of destinations:
-
-```kotlin
-interface ChatEvents {
-    // listening to the "onMessage" event will get all group message events
-    fun onMessage(message: String, from: String)
-    // In this case, you'll listen for "onPrivateMessage/<username>" events
-    // to ensure you only receive messages meant for you
-    fun onPrivateMessage(@Filter to: String, message: String, from: String)
-}
-```
-
-By default messages are sent to every listener - but perhaps you might want
-to filter messages from being sent back to the caller? I haven't done so
-but depending on your use case this might be worth considering.
-
-# Show me the code!
-
-I've uploaded
-[a simple demonstration on Github](https://github.com/crummy/kotlin-typescript-websocket-api)
-if you'd like to dig into the details on how it works.
+As governments in Africa grapple with corruption, inflation, and civil war, the ones endowed with natural resources and functional governments will begin to widen the economic divide. The countries clustered near the bottommost corner of this graph will likely continue to receive aid from foreign entities, however, reforms or revolutions will likely need to occur before they become attractive to overseas investors. Any meaningful change will need to come from within domestic borders. Once this happens, their FDI profiles will rise considerably. While FDI will not come close to remedying all ills, it has the potential, as we have seen to catalyze means of production and usher in economic expansion.  
+Figure 1 shows us, however, that some nations are embracing FDI as it continues to contribute a larger portion of their GDPs. FDI has increased in Africa over the past decade with China becoming a major investor in infrastructure projects. At the Forum on China-Africa Cooperation in 2018, China announced new funding in the form of $60 billion in credit lines, grants, interest-free loans, and investment financing. The new capital allows an easier flow of goods in the form of roads and rails, increased industrial capacities, and with it the rise of a new middle class. 
 
