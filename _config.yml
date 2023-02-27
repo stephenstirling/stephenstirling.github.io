@@ -1,11 +1,11 @@
-title: Malcolm Crum
-description: I make stuff with computers.
+title: Stephen Stirling
+description: Data Visualization Analyst
 
  # Dependencies
 markdown:         kramdown
 highlighter:      rouge
 
-url:              http://malcolmcrum.com
+url:              http://stevestirling.com
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -14,7 +14,7 @@ baseurl:          # the optional subpath of your site, e.g. "/blog"
 
 author:
   name:           'Malcolm Crum'
-  url:            https://twitter.com/crummy
+  url:            https://twitter.com/foreignofficer
 
 paginate:         5
 plugins:
@@ -26,5 +26,5 @@ plugins:
 # Custom vars
 sidebar_home_link:  false
 github:
-  repo:             https://github.com/crummy/
+  repo:             https://github.com/stephenstirling/
 google_analytics:   UA-22950801-1
