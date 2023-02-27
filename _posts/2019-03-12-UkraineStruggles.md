@@ -7,7 +7,6 @@ categories:
 tags:
   - project
 ---
-
 ![header](/assets/UkraineStruggle/header.png)
 
 Background 
