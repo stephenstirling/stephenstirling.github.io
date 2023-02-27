@@ -1,11 +1,11 @@
 ---
-title: "Tight Websocket communication with Kotlin and TypeScript"
-author: Malcolm
+title: "FDI in Africa: What Does the Data Tell Us?"
+author: Stephen
 layout: post
 categories:
 - blog
 ---
-(/assets/FDI Africa/header.png)
+![Header Image](/assets/FDI Africa/header.png)
 
 Foreign aid, as envisioned and applied throughout the 20th century, has long functioned as an approach to enhance the livelihood of local populations and to provide resources for certain aspects of society that have been unfunded by domestic means. When applied in the best of circumstances, foreign aid exists to be wary of not crowding out local investments. The best implementations of aid are those whose feasibility and prospects are long-studied and modeled in think tanks and offices in the chambered halls of western democracies. Foreign aid has played a significant role in times of emergency relief, and refugee crises, and as a temporary means to improve the quality of life in low-income and lower-middle-income economies. 
 
@@ -15,13 +15,13 @@ Despite its susceptibility to misuse, foreign aid will always play a role in int
 
 No nation has ever gone from middle income to high income without industrial means of production and generations of improving processes to trade on the international scale and become connected to the world economy. When economies lack industrial competencies, foreign direct investment can catalyze industrial growth. Using publicly available data from the World Bank and the UN Conference on Trade and Development Policy, we will take a look at how FDI has impacted the nations of Sub-Saharan Africa. The countries in this region belong to the low-income, lower-middle-income, and upper-middle-income World Bank categories.
 
-(/assets/FDI Africa/Figure+1.png)
+![Figure 1](/assets/FDI Africa/Figure+1.png)
 
 As an aggregate, Sub-Saharan Africa has seen the GDPs of its member countries fluctuate between 1990 and 2016. Across the continent, however, inflows of FDI as a proportion of the economy have made a gradual but steady upward trajectory. Despite this, the region has attracted comparatively low FDI levels compared to the rest of the world. From 2010 to 2016, the continent attracted only 1.8% of global FDI. A seeming paradox exists with FDI in Africa. Parts of the continent are replete with natural resources while supplying a relatively cheap labor force by global standards. Africa also offers a higher return on investment than most of the world at 11% compared to the global average of 7.1%. A few bottlenecks continue to exist, however, such as political instability and concern about human capital. 
 
 Figure 1 shows us, however, that some nations are embracing FDI as it continues to contribute a larger portion of their GDPs. FDI has increased in Africa over the past decade with China becoming a major investor in infrastructure projects. At the Forum on China-Africa Cooperation in 2018, China announced new funding in the form of $60 billion in credit lines, grants, interest-free loans, and investment financing. The new capital allows an easier flow of goods in the form of roads and rails, increased industrial capacities, and with it the rise of a new middle class. 
 
-(/assets/FDI Africa/FDI+GDP.png)
+![Africa GDP](/assets/FDI Africa/FDI+GDP.png)
 
 Acts of foreign investment may be applauded for having been conceived in a spirit of altruism, however, this is seemingly the result of a byproduct than the stated goals. FDI decisions are meticulously planned and analyzed for their ROI feasibility. When a foreign labor force can fulfill the same tasks as its domestic counterpart with comparatively minimal initial investment, the upfront FDI expenses often become cost-efficient. Throughout the 20th century, China served in large part as the world’s factory largely due to its cheaper labor force and highly efficient means of production. As it began to industrial heavily in the 1980s, its middle class began to emerge. While China’s industrial transformation has not been described as a revolution, its transition expanded its human capital and raised millions from abject poverty. The new capital gave China the ability to invest overseas and for the past two decades, a significant source of its outsourcing has been taking place in Africa. 
 
