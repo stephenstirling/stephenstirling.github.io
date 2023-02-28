@@ -74,7 +74,7 @@ In addition to the societal burden incurred by injured and deceased soldiers, th
 Using Tableau Desktop, I created a geocoded dashboard of registered IDPs by oblast. This visual representation tells a different story than that of the casualties. The numbers displayed below are also calculated at a ratio of 1 IDP per 100,000 residents. This time, however, the two oblasts most affected are Donetsk and Luhansk even despite their relatively low populations. This ultimately is not surprising, as over 10% of their populations have been displaced. The actual amount is likely significantly higher, as the data represented only includes registered numbers.
 
 <iframe src="https://public.tableau.com/app/profile/stephen.stirling8144/viz/UkraineRegisteredIDPs/Dashboard1?:showVizHome=no&:embed=true"
- width="845" height="1155"></iframe>      
+ width="1155" height="845"></iframe>      
 
 The war in Donbas coincided with the ascension of Petro Poroshenko as the new Ukrainian president. He has overseen the war from the beginning and his approval ratings have varied throughout that time. During the data discovery step, I found polling numbers to be readily available. To create the next graph, I looked at time-based data gathered since early 2016. During this time, Ukraine has been at war and the economy has not shown significant growth. Consequently, Poroshenko’s approval rating has suffered considerably, never crossing the 20% threshold. The data displayed in the graph below is an aggregate of several different polls. 
 
