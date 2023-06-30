@@ -1,5 +1,5 @@
 ---
-title: "Using Rayshader for Plotting in 3D"
+title: "Fundraising Among Boston’s Ukrainian Community"
 author: Stephen
 layout: post
 categories:
@@ -7,7 +7,6 @@ categories:
 ---
 ![Header-Image](/assets/ukraine_fundraising/header.png)
 
-Fundraising Among Boston’s Ukrainian Community
 
 My time in the Peace Corps serving in Ukraine finished in late 2019 as tensions with Russia were on the rise. Since then, I had kept in touch with Ukrainian colleagues, especially since the onset of the full-scale invasion in February 2022. After relocating to the Boston area late last year, I had a chance to acclimated with the local Ukrainian community. Harvard University sponsors the Ukrainian Research Institute, which hosts numerous events throughout the year, including lectures by Ukrainian diaspora leaders such as Oleksandra Matviichuk, a recipient of the 2022 Nobel Peace Prize.
  
@@ -30,7 +29,7 @@ While Boston lacks a “Ukrainian Village” as seen in Chicago or New York, the
 Lastly, as our discussion turned to focus on the current status of the war, I wanted to find out about Nika’s impressions of what a postwar Ukraine could look like. The repercussions beyond Ukraine’s borders have been immense. Sweden and Finland, longtime Western-leaning partners have been galvanized to expedite their accession processes with NATO. Finland officially joined in April, while Sweden is still awaiting ratifications from Hungary and Turkey. Chelnokova described a familiarity among older Ukrainians who had grown up during the Soviet Union speaking Russian. This contrasted with a starker discontent among younger Ukrainians. She continued, “Ukrainians are just very, very tired of this relationship with Russia, so they will be willing to do whatever it takes to not be with them”.           
 
 
-[1] Jonathan Grossman (2019) Toward a definition of diaspora, Ethnic and Racial Studies, 42:8, 1263-1282, DOI: 10.1080/01419870.2018.1550261
+[1] Jonathan Grossman (2019) Toward a definition of diaspora, Ethnic and Racial Studies, 42:8, 1263-1282, DOI: 10.1080/01419870.2018.1550261  
 [2] Beaty, T. https://apnews.com/article/technology-business-be335ce9375d11732fa3a61995267f1d
 
 
